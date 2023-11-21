@@ -1,0 +1,165 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+    //query
+    {_id:1},
+    //change => operators
+    {
+        $set: {
+            name: 'Change name',
+            price: 3000,
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:20},
+
+    {
+        $set: {
+            title: "Arena para gatos SANICAT clumping unscented 10 L",
+            Price: 18.9,
+            Description: "arena aglomerante con máxima absorción y control de los malos olores de la marca Sanicat",
+            Category: "Limpieza",
+            Image: "https://www.lavanguardia.com/files/content_image_desktop_filter/uploads/2021/10/20/61703ffbaf803.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:21},
+
+    {
+        $set: {
+            title: "Empapadores para mascotas",
+            Price: 6.89,
+            Description: "cuenta con un núcleo superabsorbente que convierte el líquido en gel al primer contacto. Además, es un material antifugas",
+            Category: "Limpieza",
+            Image: "https://www.lavanguardia.com/uploads/2021/04/06/606c3a853e959.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:22},
+
+    {
+        $set: {
+            title: "Pack de bolsas para excrementos con dispensador",
+            Price: 5.19,
+            Description: "viene acompañado de un cómodo dispensador con arnés, que nos permitirá llevar las bolsas siempre encima con la correa de paseo",
+            Category: "Limpieza",
+            Image: "https://www.lavanguardia.com/uploads/2021/03/22/605884274f695.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:23},
+
+    {
+        $set: {
+            title: "Snacks caninos de Pedigree",
+            Price: 15.5,
+            Description: "Para dar un capricho a nuestro perro cada día y cuidar, a su vez, su dentadura, la mejor solución es premiarle con snacks caninos de la marca Pedigree",
+            Category: "Alimentacion",
+            Image: "https://www.lavanguardia.com/uploads/2021/10/20/617041a8d7ee0.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:24},
+
+    {
+        $set: {
+            title: "Arena para gatos SANICAT clumping unscented 10 L",
+            Price: 18.9,
+            Description: "arena aglomerante con máxima absorción y control de los malos olores de la marca Sanicat",
+            Category: "Limpieza",
+            Image: "https://www.lavanguardia.com/files/content_image_desktop_filter/uploads/2021/10/20/61703ffbaf803.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:25},
+
+    {
+        $set: {
+            title: "Arena de bentonita para gatos con perfume de talco",
+            Price: 28.19,
+            Description: "También esta arena para gatos actuará de maravilla en el control de olores por su alta capacidad aglomerante, de hasta un 450%",
+            Category: "Limpieza",
+            Image: "https://www.lavanguardia.com/uploads/2021/10/20/61704232c42d2.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:26},
+
+    {
+        $set: {
+            title: "Árbol rascador para gatos de 1,12 metros de Lionto",
+            Price: 8.49,
+            Description: "Además de permitir a nuestro gato trepar, saltar e ir cambiando de niveles, este producto, cuenta con tres zonas de rascador, una pequeña caseta, varias plataformas",
+            Category: "Juguete",
+            Image: "https://www.lavanguardia.com/uploads/2021/10/20/617043cb68f2c.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:27},
+
+    {
+        $set: {
+            title: "Quitapelos para mascotas en formato rodillo",
+            Price: 10.18,
+            Description: "Si lo que queremos es tener la casa impoluta a pesar de tener una mascota, la mejor opción es contar con un quitapelo para poder eliminar todo el pelo que sueltan",
+            Category: "Limpieza",
+            Image: "https://www.lavanguardia.com/uploads/2021/04/06/606c3acdea483.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:28},
+
+    {
+        $set: {
+            title: "Arnés de paseo para perros ",
+            Price: 38.2,
+            Description: "También muy cómodo tanto para el día a día como para las salidas de fin de semana son los arneses para nuestros perros, que nos permiten controlar mejor los tirones de correa",
+            Category: "Paseo",
+            Image: "https://www.lavanguardia.com/uploads/2021/03/22/60587e4185db7.png"
+        }
+    }
+)
+
+db.products.updateOne(
+
+    {_id:29},
+
+    {
+        $set: {
+            title: "Cama estilo cojín",
+            Price: 50.19,
+            Description: "con un formato rectangular con bordes, esta modalidad nos permitirá ofrecer un lecho mullido y cómodo para nuestro animal de compañía",
+            Category: "Comodidad",
+            Image: "https://www.lavanguardia.com/uploads/2021/10/20/617047cea38f9.png"
+        }
+    }
+)
