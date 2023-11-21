@@ -1,0 +1,173 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop()
+
+db.products.insertMany([
+    {
+        _id: 1,
+        name: "Prodcut 1",
+        price: 100
+    },
+    {
+        _id: 2,
+        name: "Prodcut 2",
+        price: 20
+    },
+    {
+        _id: 3,
+        name: "Prodcut 3",
+        price: 120
+    },
+    {
+        _id: 4,
+        name: "Prodcut 4",
+        price: 120
+    }
+])
+
+db.products.insertMany([
+    {
+        title: "Juguete Dental de Cuerda",
+        Price: 8.99,
+        Description: "Estos juguetes para perros ayudan en la limpieza dental y proporciona entretenimiento duradero",
+        Category: "Juguetes",
+        Image: "https://i.linio.com/p/5aad64b77a29c642de4451768781869d-product.jpg"
+    },
+    {
+        Title: "Cepillo Eléctrico para Mascotas",
+        Price: 29.99,
+        Description: "El cepillo eléctrico ayuda a eliminar el pelo suelto de perros y gatos, reduciendo la cantidad de pelos en casa",
+        Category: "Cuidado del Pelaje",
+        Image: "https://canelahogar.com.co/wp-content/uploads/2020/12/CepilloElectrico-2.jpg"
+    },
+    {
+        Title: "Arenero con Filtro para Gatos",
+        Price: 22.99,
+        Description: "Arenero con filtro de carbón activado que ayuda a controlar los olores desagradables y mantiene el área limpia",
+        Category: "Higiene",
+        Image: "https://www.tierradegatos.com/terrcontenido/uploads/2018/03/980-Arenera-Romeo-con-Filtro-57x39x39.jpg"
+    },
+    {
+        Title: "Rascador Ecológico para Gatos",
+        Price: 13.99,
+        Description: "Rascador de cartón reciclado que proporciona a los gatos una superficie para afilar sus uñas y estirarse",
+        Category: "Juguetes",
+        Image: "https://m.media-amazon.com/images/I/81RzLCxgOYS.jpg"
+    },
+    {
+        Title: "Hueso Masticable para Perros",
+        Price: 5.99,
+        Description: "Hueso de cuero natural que ayuda a satisfacer el instinto de masticar de los perros, favoreciendo la salud dental",
+        Category: "Juguetes",
+        Image: "https://m.media-amazon.com/images/I/71K-1RWtxvL._AC_SL1500_.jpg"
+    },
+    {
+        Title: "Correa Retráctil para Paseos",
+        Price: 18.99,
+        Description: "Correa extensible que ofrece libertad de movimiento a tu perro durante los paseos, con sistema de bloqueo",
+        Category: "Paseo",
+        Image: "https://i.linio.com/p/b5c5ef6075e0dc7bbdc0eb688b781a48-product.jpg"
+    },
+    {
+        Title: "Bolsa de Viaje para Gatos",
+        Price: 27.99,
+        Description: "Bolsa espaciosa y ventilada para transportar a tu gato de manera cómoda y segura durante los viajes",
+        Category: "Transporte",
+        Image: "https://m.media-amazon.com/images/I/51UByPpPbjL._AC_UF350,350_QL80_.jpg"
+    },
+    {
+        Title: "Pelota de Goma Dental",
+        Price: 6.99,
+        Description: "Juguete de goma diseñado para promover la salud dental de tu perro al masajear las encías y limpiar los dientes",
+        Category: "Juguetes",
+        Image: "https://ae01.alicdn.com/kf/H4561b40e720d434e90c911d522dc6e5cw/Pelota-de-goma-para-masticar-para-perros-juguete-de-limpieza-Dental-dientes-saludables-mordedura-de-goma.jpg"
+    },
+    {
+        Title: "Mix de Premios para Mascotas",
+        Price: 15.99,
+        Description: "Paquete con una variedad de premios y golosinas saludables para perros y gatos",
+        Category: "Alimentación",
+        Image: "https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111101255_ed-min.jpg"
+    },
+    {
+        Title: "Fuente Bebedero para Gatos",
+        Price: 34.99,
+        Description: "Fuente de agua automática que mantiene el agua fresca y en movimiento, alentando a los gatos a beber más",
+        Category: "Alimentación",
+        Image: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_120770054_2793735_1?wid=800&hei=800&qlt=70"
+    },
+    {
+        Title: "Kit de Entrenamiento para Perros",
+        Price: 24.99,
+        Description: "Kit que incluye pelota de tenis, frisbee y cuerda para juegos interactivos y entrenamiento físico de tu perro",
+        Category: "Juguetes",
+        Image: "https://http2.mlstatic.com/D_NQ_NP_632504-MCO53810980834_022023-O.webp"
+    },
+    {
+        Title: "Arnés para Paseos de Conejos",
+        Price: 11.99,
+        Description: "Arnés ajustable y seguro para pasear a tu conejo con comodidad. Ideal para explorar el exterior de manera segura",
+        Category: "Accesorios",
+        Image: "https://mipetspool.com/wp-content/uploads/2021/06/arnes-conejo1-2.jpg"
+    },
+    {
+        Title: "Casita Acogedora para Hámsteres",
+        Price: 14.99,
+        Description: "Casita de madera natural para hámsteres y pequeños roedores. Proporciona un refugio acogedor y seguro",
+        Category: "Jaulas y Accesorios",
+        Image: "https://cdn.manomano.com/images/images_products/27286267/P/90007891_1.jpg"
+    },
+    {
+        Title: "Cepillo Suave Desenredante",
+        Price: 8.99,
+        Description: "Cepillo de cerdas suaves para desenredar el pelaje de tu mascota sin causar molestias. Ideal para perros y gatos de pelo largo",
+        Category: "Cuidado del Pelaje",
+        Image: "https://http2.mlstatic.com/D_NQ_NP_773018-MCO45006562342_022021-O.webp"
+    },
+    {
+        Title: "Chaqueta Reflectante para Perros",
+        Price: 19.99,
+        Description: "Chaqueta con material reflectante para una mayor visibilidad y seguridad durante los paseos nocturnos con tu perro",
+        Category: "Ropa",
+        Image: "https://m.media-amazon.com/images/I/81Fh3gYkEzL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        Title: "Juguete de Caza con Plumas",
+        Price: 7.99,
+        Description: "Juguete interactivo con plumas que estimula el instinto de caza de tu gato. Horas de diversión aseguradas",
+        Category: "Juguetes",
+        Image: "https://http2.mlstatic.com/D_NQ_NP_625020-MCO51388445809_092022-O.webp"
+    },
+    {
+        Title: "Cama Cómoda para Perros y Gatos",
+        Price: 29.99,
+        Description: "Cama acolchada de felpa suave para un descanso cómodo. Adecuada para perros y gatos de todos los tamaños",
+        Category: "Descanso",
+        Image: "https://hips.hearstapps.com/hmg-prod/images/camas-perros-643649803c439.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*"
+    },
+    {
+        Title: "Comedero Automático SmartPet",
+        Price: 49.99,
+        Description: "Comedero automático programable con temporizador. Ideal para mantener la rutina de alimentación de tu mascota incluso cuando no estás en casa",
+        Category: "Alimentación",
+        Image: "https://m.media-amazon.com/images/I/61jGkyId4pL._AC_SX679_.jpg",
+    },
+    {
+        Title: "Collar de Lujo para Gatos",
+        Price: 12.99,
+        Description: "Collar elegante con pedrería brillante, ajustable para gatos. Añade un toque de estilo a tu felino",
+        Category: "Accesorios",
+        Image: "https://m.media-amazon.com/images/I/71oko175hYL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        Title: "Pelota Duradera para Perros",
+        Price: 9.99,
+        Description: "Pelota de goma resistente ideal para juegos de lanzar y atrapar. Perfecta para perros de todas las razas y tamaños",
+        Category: "Juguetes",
+        Image: "https://m.media-amazon.com/images/I/712KQrkHQcL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+
+    }
+
+])
